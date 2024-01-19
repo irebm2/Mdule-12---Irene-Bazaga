@@ -1,5 +1,6 @@
 // TODO: Write code to define and export the Intern class.  HINT: This class should inherit from Employee.
 // This class extends the Employee class and adds properties and methods specific to interns.
+const Employee = require("./Employee");
 class Intern extends Employee {
     /**
      * Creates a new Intern object with the specified name, ID, email, and school.

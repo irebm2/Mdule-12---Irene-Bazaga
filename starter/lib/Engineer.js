@@ -1,5 +1,6 @@
 // TODO: Write code to define and export the Engineer class.  HINT: This class should inherit from Employee.
 // This class extends the Employee class and adds properties and methods specific to engineers.
+const Employee = require("./Employee");
 class Engineer extends Employee {
     /**
      * Creates a new Engineer object with the specified name, ID, email, and GitHub username.
