@@ -76,11 +76,30 @@ async function gatherInternInfo() {
 
   teamMembers.push(intern);
 }
-
 async function main() {
+    // Gather manager information (always required)
     await gatherManagerInfo();
-    await gatherEngineerInfo();
-    await gatherInternInfo();
+  
+    // Loop for adding engineers or interns
+    while (true) {
+      const addMemberChoice = await inquirer.prompt([
+        {
+          type: "list",
+          name: "addMember",
+          message: "Do you want to add an engineer, intern, or finish adding team members?",
+          choices: ["Engineer", "Intern", "Finish adding"],
+        },
+      ]);
+  
+      if (addMemberChoice.addMember === "Engineer") {
+        await gatherEngineerInfo();
+      } else if (addMemberChoice.addMember === "Intern") {
+        await gatherInternInfo();
+      } else {
+        // User chose to finish adding members
+        break;
+      }
+    }
   
     const htmlContent = render(teamMembers);
   
