@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .jumbotron {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .team-heading h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Card styling */
+  .employee-card {
+    margin: 15px;
+    width: 300px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employee-card .card-header {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .employee-card .card-title {
+    margin-bottom: 0;
+  }
+  
+  .employee-card .card-body {
+    padding: 15px;
+  }
+  
+  .employee-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .employee-card li {
+    margin-bottom: 5px;
+  }
+  
+  .employee-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Manager card styling */
+  .manager-card {
+    background-color: #f0f0f0; /* Lighter color for manager */
+    border-color: #ccc;
+  }
+  
+  .manager-card .card-header {
+    background-color: #a8e2f6; /* Light blue for manager header */
+  }
+  
+  /* Engineer card styling */
+  .engineer-card {
+    background-color: #e6f5ff; /* Lighter blue for engineers */
+    border-color: #99c5e8;
+  }
+  
+  .engineer-card .card-header {
+    background-color: #5bc0de; /* Blue for engineer header */
+  }
+  
+  /* Intern card styling */
+  .intern-card {
+    background-color: #cd3d3d; /* White for interns */
+    border-color: #ddd;
+  }
+  
+  .intern-card .card-header {
+    background-color: #f0f0f0; /* Light gray for intern header */
+  }
+  
+  /* Level styling */
+  .manager-card {
+    position: relative;
+    top: -15px; /* Raise manager card slightly */
+  }
+  
+  .intern-card {
+    position: relative;
+    top: 15px; /* Lower intern card slightly */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .team-area {
+      flex-wrap: wrap;
+    }
+  
+    .employee-card {
+      margin-bottom: 20px;
+    }
+  }
