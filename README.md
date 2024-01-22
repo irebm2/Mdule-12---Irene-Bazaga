@@ -22,7 +22,8 @@ As a manager, I want a quick and efficient way to create a webpage displaying my
 
 1. **Clone the repository:** Use the command above to get started.
 2. **Install dependencies:** Run `npm install` to install required libraries.
-   ```bash
+ 
+```bash
 git clone <repository-url>
 cd <repository-folder>
 npm install
