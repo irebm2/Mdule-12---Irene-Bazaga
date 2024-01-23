@@ -74,7 +74,7 @@ body {
   }
   
   
- /* Row styling */
+/* Row styling */
 .team-area {
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +99,13 @@ body {
   .intern-card {
     background-color: #f4f0f0;
     border-color: #ddd;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  /* Additional styling for manager row */
+  .manager-row {
+    display: flex;
+    justify-content: space-evenly; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust as needed */
   }
   
