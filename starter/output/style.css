@@ -101,4 +101,12 @@ body {
     .employee-card {
       margin-bottom: 20px;
     }
+    
+    .engineer-row,
+.intern-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
   }
