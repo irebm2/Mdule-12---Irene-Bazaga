@@ -61,22 +61,34 @@ const generateTeam = team => {
 
   const html = [];
 
-  html.push(team
-    .filter(employee => employee.getRole() === "Manager")
-    .map(manager => generateManager(manager))
-  );
-  html.push(team
-    .filter(employee => employee.getRole() === "Engineer")
-    .map(engineer => generateEngineer(engineer))
-    .join("")
-  );
-  html.push(team
-    .filter(employee => employee.getRole() === "Intern")
-    .map(intern => generateIntern(intern))
-    .join("")
-  );
+html.push(`
+  <div class="manager-cards">
+    ${team
+      .filter(employee => employee.getRole() === "Manager")
+      .map(manager => generateManager(manager))
+      .join("")}
+  </div>
+`);
 
-  return html.join("");
+html.push(`
+  <div class="engineer-cards">
+    ${team
+      .filter(employee => employee.getRole() === "Engineer")
+      .map(engineer => generateEngineer(engineer))
+      .join("")}
+  </div>
+`);
+
+html.push(`
+  <div class="intern-cards">
+    ${team
+      .filter(employee => employee.getRole() === "Intern")
+      .map(intern => generateIntern(intern))
+      .join("")}
+  </div>
+`);
+
+return html.join("");
 
 }
 

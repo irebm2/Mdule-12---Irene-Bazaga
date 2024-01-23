@@ -1,124 +1,111 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: #5618f19e;
-    background-image: url('../backgroundImg.jpg');
+    background-image: url('./jess-bailey-Y4_M-a8daKE-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.jumbotron {
+    border-radius: 10px;
+  }
+  
+  /* Jumbotron and heading */
+  .jumbotron {
     background-color: #9e86ba;
     padding: 30px;
-    border-radius: 5px;
-}
-
-.team-heading h1 {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .team-heading h1 {
     font-size: 3rem;
     font-weight: bold;
-}
-
-/* Card styling */
-.employee-card {
+  }
+  
+  /* Card styling */
+  .employee-card {
     margin: 15px;
     width: 300px; /* Adjust width as needed */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.employee-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adjust shadow properties as needed */
-    transform: scale(1.05); /* Zoom in effect on hover */
+  }
+  
+  .employee-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05); /* Adjust zoom effect slightly */
     cursor: pointer;
-}
-
-.employee-card .card-header {
+  }
+  
+  .employee-card .card-header {
     padding: 15px;
     border-bottom: 1px solid #ccc;
-}
-
-.employee-card .card-title {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .employee-card .card-header .card-title {
     margin-bottom: 0;
     min-height: 60px;
-}
-
-.employee-card .card-body {
+  }
+  
+  .employee-card .card-title {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  
+  .employee-card .card-body {
     padding: 15px;
-}
-
-.employee-card ul {
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .employee-card ul {
     list-style: none;
     padding: 0;
-}
-
-.employee-card li {
+  }
+  
+  .employee-card li {
     margin-bottom: 5px;
-}
-
-.employee-card a {
+  }
+  
+  .employee-card a {
     color: #6c11f5ff;
     text-decoration: none;
-}
-
-/* Manager card styling */
-.manager-card {
-    background-color: #f0f0f0; /* Lighter color for manager */
+  }
+  
+  
+ /* Row styling */
+.team-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Adjust as needed */
+  }
+  
+  /* Manager card styling */
+  .manager-card {
+    background-color: #f0f0f0;
     border-color: #ccc;
-}
-
-.manager-card .card-header {
-    background-color: #a8e2f6; /* Light blue for manager header */
-}
-
-/* Engineer card styling */
-.engineer-card {
-    background-color: #e6f5ff; /* Lighter blue for engineers */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  /* Engineer card styling */
+  .engineer-card {
+    background-color: #e6f5ff;
     border-color: #99c5e8;
-}
-
-.engineer-card .card-header {
-    background-color: #a9ee83; /* Green for engineer header */
-}
-
-/* Intern card styling */
-.intern-card {
-    background-color: #f4f0f0; /* Light gray for interns */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  /* Intern card styling */
+  .intern-card {
+    background-color: #f4f0f0;
     border-color: #ddd;
-}
-
-.intern-card .card-header {
-    background-color: #c087f3; /* Purple for intern header */
-}
-
-/* Level styling */
-.manager-card {
-    position: relative;
-    top: -15px; /* Raise manager card slightly */
-}
-
-.intern-card {
-    position: relative;
-    top: 15px; /* Lower intern card slightly */
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-    .team-area {
-        flex-wrap: wrap;
-    }
-
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
     .employee-card {
-        margin-bottom: 20px;
+      margin: 10px;
     }
-
-    .engineer-row,
-    .intern-row {
-        margin-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
+  }
+  
